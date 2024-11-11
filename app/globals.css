@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.bluring {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.paragraph {
+  @apply flex flex-wrap flex-row text-[1.4rem] md:text-[2rem] lg:text-[2.6rem] font-500 leading-[2rem] md:leading-[2.6rem] lg:leading-[2.6rem]  max-w-[1000px];
+}
+.word {
+  @apply relative p-[2px] md:p-[4px] lg:p-[4px];
+}
+.back {
+  position: absolute;
+  opacity: 30%;
+  width: full;
+}
+
+.pagelayout {
+  @apply flex relative justify-center  items-center space-y-[40px] md:space-y-[80px] lg:space-y-[144px]  flex-col  h-full w-full;
+}
+
+.text {
+  @apply text-[1.4rem] md:text-[2rem] lg:text-[2rem] font-500 leading-[2.6rem] lg:leading-[2.6rem];
+}
+
+.globe-image {
+  transition: transform 0.5s ease-in-out;
+}
+.globe-image:hover {
+  transform: rotate(360deg);
+}
