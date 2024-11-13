@@ -1,7 +1,7 @@
 'use client';
 
 import Home from './pages/home/page';
-import About from './pages/ViewIn3d/page';
+import About from './pages/ViewIn3d';
 import { ReactLenis } from 'lenis/react';
 import Preloader from './Components/Preloader/page';
 import Services from './pages/Services/page';

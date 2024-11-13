@@ -1,11 +1,9 @@
 'use client';
-
+import LargeScreen from '@/app/Components/3D/LargeScreen';
+import SmallScreen from '@/app/Components/3D/SmallScreen';
 import React, { useEffect, useState } from 'react';
 
-import SmallScreen from './SmallScreen';
-import LargeScreen from './LargeScreen';
-
-function About() {
+function ViewIn3d() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
@@ -22,4 +20,4 @@ function About() {
   return <>{isLargeScreen ? <LargeScreen /> : <SmallScreen />}</>;
 }
 
-export default About;
+export default ViewIn3d;
