@@ -19,13 +19,13 @@ const Mainanimation = ({ text, className }) => {
       scale: 1,
       duration: 0.8,
       ease: 'power3.out',
-      stagger: 0.05, // Adjust the stagger delay for a smoother transition
+      stagger: 0.05,
       rotate: 0,
       scrollTrigger: {
         trigger: textRef.current,
-        start: 'top 90%', // Adjust the start position for entering animation
-        end: 'bottom 20%', // Adjust the end position for leaving animation
-        scrub: true, // Make animation smooth on scroll
+        start: 'top 90%',
+        end: 'bottom 20%',
+        scrub: true, 
         onEnter: () => gsap.to(words, { opacity: 1, scale: 1, duration: 0.8, ease: 'power3.out' }),
         onLeave: () => gsap.to(words, { opacity: 0, scale: 0.8, duration: 0.8, ease: 'power3.in' }),
       },

@@ -18,29 +18,30 @@ function Home() {
     const zoomcontainer = zoomcontainerRef.current;
     const image2 = image2Ref.current;
 
-    gsap.set(image2, { clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' });
+    // Initial clipPath to cover image from left
+    gsap.set(image2, { clipPath: 'inset(0 100% 0 0)' });
     gsap.set(zoomcontainer, { width: '50%' });
 
+    // Animate zoomcontainer width
     gsap.to(zoomcontainer, {
       width: '98%',
       borderRadius: 10,
       scrollTrigger: {
         trigger: container,
-        start: '10%',
-        end: '90%',
+        start: 'top center',
+        end: 'bottom center',
         scrub: true,
-
-        duration: 0.1,
       },
     });
 
+    // Animate image2 clipPath to reveal from left to right
     gsap.to(image2, {
-      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%)',
+      clipPath: 'inset(0 0% 0 0)', // Reveals image from left to right
       ease: 'none',
       scrollTrigger: {
         trigger: container,
         start: 'center center',
-        end: '80%',
+        end: 'bottom center',
         scrub: true,
       },
     });
@@ -50,32 +51,39 @@ function Home() {
     <>
       <main
         ref={containerRef}
-        className=" relative flex flex-col items-center h-[400vh] w-full mt-[5%]  "
+        className="relative flex flex-col items-center h-[400vh] w-full mt-[20%]"
       >
+        <div className="flex items-center justify-center w-full">
+          <Headeranimation
+            className="text-6xl lg:text-[200px] text-black relative w-full"
+            text="omnisonic"
+          />
+        </div>
         <div
           ref={zoomcontainerRef}
-          className="sticky h-[50vh] lg:h-[90vh] w-full   top-10 flex items-center justify-center flex-col overflow-hidden"
+          className="sticky h-[50vh] lg:h-[90vh] w-full top-10 flex items-center justify-center flex-col overflow-hidden"
         >
-          <img src={'/ld.png'} className="h-full w-screen object-cover relative" />
+          <div className=" absolute flex h-full w-full items-start justify-start z-50 p-[4%]">
+            <SpecialTextanimation
+              text="immersive, 360 - degree audio experiences."
+              specialWords={['360', '-', 'degree']}
+              className="w-full leading-tight"
+            />
+          </div>
+          <img src={'/b.png'} className="h-full w-screen object-cover relative" />
           <img
             ref={image2Ref}
-            className="h-full w-screen object-cover  absolute top-0 z-40"
-            src={'/clip3.jpg'}
+            className="h-full w-screen object-cover absolute top-0 z-40"
+            src={'/a.png'}
           />
         </div>
       </main>
-      <div className="flex flex-col lg:flex-row h-[50vh] md:h-[100vh]  lg:h-[100vh] w-full  px-[5%]   ">
-        <div className="flex items-center justify-center w-full">
-          <Headeranimation
-            className="  text-6xl lg:text-[200px] text-black relative   w-full"
-            text="anc"
-          />
-        </div>
-        <div className="flex w-full items-center justify-end">
+      <div className="flex flex-col lg:flex-row h-[50vh] md:h-[100vh] lg:h-[100vh] w-full px-[5%]">
+        <div className="flex w-full items-center justify-center">
           <SpecialTextanimation
-            text="Powered by Bang & Olufsen's signature sound, the Beoplay HX delivers clarity, precision, and power. Every note is . Surface Headphones 2 features voice, touch and fingertip controls with 13 levels of active noise cancellation."
+            text="Powered by Bang & Olufsen's signature sound, the Beoplay HX delivers clarity, precision, and power. Every note is . Surface Headphones 2 features voice, touch, and fingertip controls with 13 levels of active noise cancellation."
             specialWords={['Bang', '&', 'Olufsen']}
-            className=" w-full lg:w-3/4  leading-tight"
+            className="w-full lg:w-[40%] leading-tight"
           />
         </div>
       </div>

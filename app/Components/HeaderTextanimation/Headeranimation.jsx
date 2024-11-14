@@ -9,14 +9,13 @@ const Headeranimation = ({ text, className }) => {
   useEffect(() => {
     const letters = textRef.current.querySelectorAll('.letter');
 
-    gsap.set(letters, { opacity: 0, xPercent: 100 });
+    gsap.set(letters, { yPercent: 100 });
 
     const animation = gsap.to(letters, {
-      opacity: 1,
-      xPercent: 0,
-      duration: 0.8,
+      yPercent: 0,
+      duration: 1,
       ease: 'power3.out',
-      stagger: 0.05,
+      stagger: 0.09,
       scrollTrigger: {
         trigger: textRef.current,
         start: 'top 80%',
@@ -30,7 +29,7 @@ const Headeranimation = ({ text, className }) => {
   }, []);
 
   return (
-    <div ref={textRef} className={className}>
+    <div ref={textRef} className={` overflow-hidden ${className}`}>
       {text.split('').map((letter, index) => (
         <span key={index} className="letter inline-block  ">
           {letter === ' ' ? '\u00A0' : letter}
