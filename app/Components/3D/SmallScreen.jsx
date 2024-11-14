@@ -19,7 +19,7 @@ function SmallScreen() {
 
       {/* Section of product animation and details */}
       <div className=" flex h-full w-full items-center flex-col    text-white my-10 ">
-        <img className=" h-full w-full object-cover rounded-lg" src="HP1.png" alt="" />
+        <img className=" h-full w-full object-cover rounded-lg" src="/HP1.png" alt="" />
         <AdvancedText
           text="Powered by Microsoft"
           AdvancedWords={['Microsoft']}
@@ -27,7 +27,7 @@ function SmallScreen() {
         />
       </div>
       <div className=" flex h-full w-full items-center flex-col    z-[100] text-white my-10 ">
-        <img className="h-full w-full  object-cover rounded-lg" src="HP2.png " alt="" />
+        <img className="h-full w-full  object-cover rounded-lg" src="/HP2.png " alt="" />
         <AdvancedText
           text="Bluetooth action playback"
           AdvancedWords={['Bluetooth']}
@@ -35,7 +35,7 @@ function SmallScreen() {
         />
       </div>
       <div className=" flex h-full w-full items-center flex-col    z-[100] text-white my-10 ">
-        <img className=" h-full w-full  object-cover rounded-lg" src="HP3.png" alt="" />
+        <img className=" h-full w-full  object-cover rounded-lg" src="/HP3.png" alt="" />
         <AdvancedText
           text="ultra -comfortable ear pads"
           AdvancedWords={['ultra']}
@@ -43,7 +43,7 @@ function SmallScreen() {
         />
       </div>
       <div className=" flex h-full w-full items-center flex-col   l z-[100] text-white my-10 ">
-        <img className=" h-full w-full object-cover rounded-lg" src="HP4.png" alt="" />
+        <img className=" h-full w-full object-cover rounded-lg" src="/HP4.png" alt="" />
         <AdvancedText
           text="13 levels of active noise cancellation"
           AdvancedWords={['13', 'levels']}
