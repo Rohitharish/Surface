@@ -1,7 +1,7 @@
 'use client';
 import CanvasComponent from '@/app/Components/3D/Canvas';
 import gsap from 'gsap';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, Suspense } from 'react';
 import Mainanimation from '@/app/Components/maintextanimation/Mainanimation';
 import Headeranimation from '@/app/Components/HeaderTextanimation/Headeranimation';
 import AdvancedText from '@/app/Components/ThreeTextAnimation/AdvancedText';
@@ -67,8 +67,9 @@ function LargeScreen() {
           className="w-full text-3xl leading-tight lowercase"
         />
       </div>
-
+      <Suspense fallback={<div>Loading...</div>}>
       <CanvasComponent />
+      </Suspense>
     </main>
   );
 }
