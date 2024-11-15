@@ -1,6 +1,8 @@
 'use client';
 import LargeScreen from '@/app/Components/3D/LargeScreen';
 import SmallScreen from '@/app/Components/3D/SmallScreen';
+import { ReactLenis } from 'lenis/react';
+
 import React, { useEffect, useState } from 'react';
 
 function ViewIn3d() {
@@ -17,7 +19,7 @@ function ViewIn3d() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return <>{isLargeScreen ? <LargeScreen /> : <SmallScreen />}</>;
+  return <ReactLenis root>{isLargeScreen ? <LargeScreen /> : <SmallScreen />}</ReactLenis>;
 }
 
 export default ViewIn3d;

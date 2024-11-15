@@ -16,7 +16,13 @@ export default function Main() {
   return (
     <ReactLenis root>
       {/* <Menu /> */}
-      <About />
+      <Preloader />
+      <Home />
+      <Services />
+      <Beoplay />
+      <Hover />
+      <Feedback />
+      <Footer />
     </ReactLenis>
   );
 }
