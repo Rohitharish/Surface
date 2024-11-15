@@ -1,11 +1,11 @@
-"use client"
+'use client';
 import React, { useEffect } from 'react';
 import { useGLTF } from '@react-three/drei';
 
 export default function Model() {
-  const { scene } = useGLTF('/Model.glb'); 
+  const { scene } = useGLTF('/sphere.glb');
 
   return <primitive object={scene} />;
 }
 
-useGLTF.preload('/Model.glb');
+useGLTF.preload('/sphere.glb');
