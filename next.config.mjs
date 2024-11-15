@@ -1,14 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Rewrite rules to map the URL to the public directory
-  async rewrites() {
-    return [
-      {
-        source: '/Model.glb',
-        destination: '/public/Model.glb', // Ensure your Model is in the public directory
-      },
-    ];
-  },
 
   // Custom Webpack configuration to handle .glb files using url-loader
   webpack(config) {
