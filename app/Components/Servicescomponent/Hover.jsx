@@ -35,7 +35,6 @@ function Hover() {
             start: 'top 100%',
             end: 'bottom -50%',
             scrub: 2,
-
           },
           yPercent: -20,
           ease: 'power2.out',
@@ -50,7 +49,6 @@ function Hover() {
             start: 'top 100%',
             end: 'bottom -50%',
             scrub: 2,
-       
           },
           yPercent: -20,
           ease: 'power2.out',
@@ -73,7 +71,7 @@ function Hover() {
       <div className="flex w-full items-start py-[2%]">
         <Headeranimation
           className="text-6xl md:text-9xl lg:text-[200px] text-white relative w-full"
-          text="hover"
+          text="Gase"
         />
       </div>
 

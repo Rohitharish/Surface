@@ -3,7 +3,7 @@
 import gsap from 'gsap';
 import React, { useEffect, useRef } from 'react';
 
-const Headeranimation = ({ text, className }) => {
+const Surface = ({ text, className }) => {
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -35,10 +35,8 @@ const Headeranimation = ({ text, className }) => {
           {letter === ' ' ? '\u00A0' : letter}
         </span>
       ))}
-
-      <span className=" bg-orange-600 letter inline-block h-[10px] w-[40px] rounded-full"></span>
     </div>
   );
 };
 
-export default Headeranimation;
+export default Surface;

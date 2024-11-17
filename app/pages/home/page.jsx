@@ -18,11 +18,9 @@ function Home() {
     const zoomcontainer = zoomcontainerRef.current;
     const image2 = image2Ref.current;
 
-    // Initial clipPath to cover image from left
     gsap.set(image2, { clipPath: 'inset(0 100% 0 0)' });
     gsap.set(zoomcontainer, { width: '50%' });
 
-    // Animate zoomcontainer width
     gsap.to(zoomcontainer, {
       width: '98%',
       borderRadius: 10,
@@ -34,9 +32,8 @@ function Home() {
       },
     });
 
-    // Animate image2 clipPath to reveal from left to right
     gsap.to(image2, {
-      clipPath: 'inset(0 0% 0 0)', // Reveals image from left to right
+      clipPath: 'inset(0 0% 0 0)',
       ease: 'none',
       scrollTrigger: {
         trigger: container,

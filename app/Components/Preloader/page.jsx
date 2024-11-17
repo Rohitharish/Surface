@@ -136,7 +136,7 @@ function Preloader() {
         >
           <img
             ref={Imageref}
-            src="/headset2.png"
+            src="/a.png"
             className="object-cover h-full w-full"
             // controls
             // autoPlay={true}
