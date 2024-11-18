@@ -147,11 +147,11 @@ function Preloader() {
 
       {/* Right-aligned section */}
       <section className="flex flex-col  w-full space-y-2   items-end px-[2%] ">
-        <h3 className="text-md font-500 w-full md:w-1/2 lg:w-[40%] ">2016-2024</h3>
+        <h3 className="text-md font-500 w-full md:w-1/2 lg:w-[40%] ">007-008</h3>
 
         <SpecialTextanimation
-          text="Powered by Bang & Olufsen signature sound the Beoplay HX delivers exceptional clarity precision and power Every note is finely tuned, creating a rich immersive soundscape that transforms how you listen."
-          specialWords={['Bang', '&', 'Olufsen']}
+          text="Surface Headphones by Microsoft offer a solid audio experience with a focus on comfort and functionality. offer a refined solution for those who want to stay immersed in their audio world while staying connected."
+          specialWords={['Microsoft', '&', 'Surface']}
           className=" w-full lg:w-[40%] leading-tight"
         />
       </section>

@@ -15,7 +15,7 @@ import Hover from './Components/Servicescomponent/Hover';
 export default function Main() {
   return (
     <ReactLenis root>
-      {/* <Menu /> */}
+      <Menu />
       <Preloader />
       <Home />
       <Services />

@@ -52,7 +52,7 @@ const SpecialTextanimation = ({ text, className, specialWords = [] }) => {
         const isSpecialWord = specialWords.includes(word);
 
         return (
-          <span key={index} className="inline-block overflow-hidden">
+          <span key={index} className="inline-block overflow-hidden font-400">
             <span className={`inline-block mr-2 ${isSpecialWord ? 'special-word' : 'normal-word'}`}>
               {word}
             </span>

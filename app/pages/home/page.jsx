@@ -75,11 +75,11 @@ function Home() {
           />
         </div>
       </main>
-      <div className="flex flex-col lg:flex-row h-[50vh] md:h-[100vh] lg:h-[100vh] w-full px-[5%]">
+      <div className="flex flex-col lg:flex-row h-[30vh] md:h-[100vh] lg:h-[100vh] w-full p-[5%]">
         <div className="flex w-full items-center justify-center">
           <SpecialTextanimation
-            text="Powered by Bang & Olufsen's signature sound, the Beoplay HX delivers clarity, precision, and power. Every note is . Surface Headphones 2 features voice, touch, and fingertip controls with 13 levels of active noise cancellation."
-            specialWords={['Bang', '&', 'Olufsen']}
+            text="Sound technology that delivers a fully immersive, 360-degree audio experience, providing rich, dynamic sound from all directions. Omnisonic sound seeks to provide a fully enveloping experience that can adjust to the movement of the listener or the action within the media."
+            specialWords={['Sound', 'dynamic']}
             className="w-full lg:w-[40%] leading-tight"
           />
         </div>

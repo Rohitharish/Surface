@@ -32,7 +32,6 @@ function Services() {
             start: 'top 100%',
             end: 'bottom -50%',
             scrub: 2,
-
           },
           yPercent: -20,
           ease: 'power2.out',
@@ -66,11 +65,11 @@ function Services() {
         >
           <img
             ref={ImageRef}
-            src="/headset1.png"
+            src="/Anc.png"
             alt="Gesture Image"
             // width={1000}
             // height={1000}
-            className="object-cover w-full h-[150vh]"
+            className="object-cover w-full h-[120vh]"
           />
         </div>
         {/* second section */}
@@ -90,7 +89,7 @@ function Services() {
             </div>
             <div className="flex h-full w-full  lg:w-1/2 items-end justify-start p-4 ">
               <TextAnimation
-                className="text-xs text-white relative  uppercase"
+                className="text-xs text-gray-400 relative  "
                 text="Effortlessly switch between your favorite playlists or take calls with intuitive touch controls"
               />
             </div>
