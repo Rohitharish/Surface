@@ -5,7 +5,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import Mainanimation from '@/app/Components/maintextanimation/Mainanimation';
 import Headeranimation from '@/app/Components/HeaderTextanimation/Headeranimation';
 import AdvancedText from '@/app/Components/ThreeTextAnimation/AdvancedText';
-import Card from '@/app/Components/ThreeTextAnimation/Card';
 
 function SmallScreen() {
   return (
@@ -14,8 +13,6 @@ function SmallScreen() {
         className=" text-lg   text-white  flex items-center justify-center w-full h-[50vh] lowercase"
         text="Surface"
       />
-
-      {/* <Card text="recommended desktop for immersive experience" /> */}
 
       {/* Section of product animation and details */}
       <div className=" flex h-full w-full items-center flex-col    text-white my-10 ">

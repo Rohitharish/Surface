@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState, Suspense } from 'react';
 import Mainanimation from '@/app/Components/maintextanimation/Mainanimation';
 import Headeranimation from '@/app/Components/HeaderTextanimation/Headeranimation';
 import AdvancedText from '@/app/Components/ThreeTextAnimation/AdvancedText';
-import Card from '@/app/Components/ThreeTextAnimation/Card';
+
 
 function LargeScreen() {
   const backgroundref = useRef(null);
@@ -36,7 +36,6 @@ function LargeScreen() {
         className="text-6xl md:text-6xl lg:text-[300px] text-white absolute flex items-end justify-center w-full h-full lowercase py-[10%]"
         text="Available"
       />
-      <Card text="recommended desktop for immersive experience" />
 
       {/* Section of product animation and details */}
       <div className="absolute flex items-center flex-row-reverse top-[35%] left-[10%]  text-white space-x-2 md:visible lg:visible">
@@ -68,7 +67,7 @@ function LargeScreen() {
         />
       </div>
       <Suspense fallback={<div>Loading...</div>}>
-      <CanvasComponent />
+        <CanvasComponent />
       </Suspense>
     </main>
   );

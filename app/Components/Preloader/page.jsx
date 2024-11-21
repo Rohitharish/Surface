@@ -136,8 +136,8 @@ function Preloader() {
         >
           <img
             ref={Imageref}
-            src="/a.png"
-            className="object-cover h-full w-full"
+            src="/MainImg.png"
+            className="object-cover h-full md:h-[110vh]  lg:h-[110vh] w-full "
             // controls
             // autoPlay={true}
             // muted

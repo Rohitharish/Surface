@@ -71,7 +71,7 @@ function Hover() {
       <div className="flex w-full items-start py-[2%]">
         <Headeranimation
           className="text-6xl md:text-9xl lg:text-[200px] text-white relative w-full"
-          text="Gase"
+          text="Cortana"
         />
       </div>
 
@@ -82,7 +82,7 @@ function Hover() {
         >
           <img
             ref={ImageRef}
-            src="/headset2.png"
+            src="/Main.png"
             alt="Gesture Image"
             // width={1000}
             // height={1000}
@@ -93,24 +93,24 @@ function Hover() {
         <div className="col-span-12 lg:col-span-5 bg-black rounded-lg h-[50vh] lg:h-[90vh] overflow-hidden">
           <img
             ref={Image2Ref}
-            src="/headset1.png"
+            src="/lab.png"
             alt="Gesture Image"
             // width={1000}
             // height={1000}
-            className="object-cover w-full h-[150vh]"
+            className="object-cover w-full h-[120vh]"
           />
         </div>
       </div>
       <div className="w-full flex items-center justify-start py-[1%] ">
         <TextAnimation
           className="text-base text-white relative h-full w-full lg:w-1/2"
-          text=" intuitive touch controls"
+          text="Voice Assistant"
         />
       </div>
-      <div className="w-full flex items-center justify-end py-[15%] lg:py-[20%] ">
+      <div className="w-full flex items-center justify-end py-[15%] lg:py-[20%]   ">
         <TextAnimation
-          className="text-sm lg:text-base text-zinc-600 relative h-full w-full lg:w-1/2"
-          text="Whether you're listening via Bluetooth, USB-C, or a 3.5mm audio jack, Beoplay HX offers seamless compatibility with all your devices. Multipoint connectivity allows you to pair with two devices simultaneously, so you can easily switch between your phone and laptop without missing a beat."
+          className="text-sm lg:text-base text-zinc-400 relative h-full w-full lg:w-[40%] leading-tight"
+          text="Enhance the overall user experience by providing seamless, hands-free interaction. It’s particularly useful for professionals, commuters, and multitaskers who want to stay productive or entertained without being tethered to a screen."
         />
       </div>
     </div>
