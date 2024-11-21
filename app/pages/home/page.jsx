@@ -67,7 +67,7 @@ function Home() {
               className="w-full leading-tight"
             />
           </div>
-          <img src={'/ominiW.png'} className="h-full w-screen object-cover relative" />
+          <img src={'/omini.png'} className="h-full w-screen object-cover relative" />
           <img
             ref={image2Ref}
             className="h-full w-screen object-cover absolute top-0 z-40"

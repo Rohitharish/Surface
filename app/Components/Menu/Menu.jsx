@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import Link from 'next/link';
 
 const menulinks = [
-  { path: '/', label: '- Product' },
+  { path: '/pages/ViewIn3d', label: '- Product' },
   { path: '/', label: '- Company' },
   { path: '/', label: '- FAQ' },
 ];
@@ -88,10 +88,7 @@ function Menu() {
               ref={el => (linksRef.current[index] = el)}
               className="my-2 pointer-events-auto"
             >
-              <Link
-                href={link.path}
-                className="text-white text-xl lg:text-3xl hover:underline transition-all ease-in duration-300"
-              >
+              <Link href={link.path} className="text-white text-xl lg:text-3xl ">
                 {link.label}
               </Link>
             </li>

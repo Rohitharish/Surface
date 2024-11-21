@@ -77,8 +77,8 @@ function Services() {
           <section className="flex h-[60vh] lg:h-full w-full flex-col">
             <div className="flex h-full  w-full justify-end  ">
               <TextAnimation
-                className="text-2xl md:text-2xl lg:text-xl text-white relative p-4"
-                text="System"
+                className="text-2xl md:text-2xl lg:text-xl  relative p-4 text-white"
+                text="01"
               />
             </div>
             <div className="flex  h-full  w-full items-center justify-center ">

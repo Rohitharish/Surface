@@ -82,7 +82,7 @@ function Hover() {
         >
           <img
             ref={ImageRef}
-            src="/Main.png"
+            src="/Set1.png"
             alt="Gesture Image"
             // width={1000}
             // height={1000}
@@ -93,7 +93,7 @@ function Hover() {
         <div className="col-span-12 lg:col-span-5 bg-black rounded-lg h-[50vh] lg:h-[90vh] overflow-hidden">
           <img
             ref={Image2Ref}
-            src="/lab.png"
+            src="/Set2.png"
             alt="Gesture Image"
             // width={1000}
             // height={1000}

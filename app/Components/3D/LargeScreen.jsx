@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState, Suspense } from 'react';
 import Mainanimation from '@/app/Components/maintextanimation/Mainanimation';
 import Headeranimation from '@/app/Components/HeaderTextanimation/Headeranimation';
 import AdvancedText from '@/app/Components/ThreeTextAnimation/AdvancedText';
+import SpecialTextanimation from '../SpecialText/SpecialTextanimation';
 
 function LargeScreen() {
   const backgroundref = useRef(null);
@@ -26,11 +27,21 @@ function LargeScreen() {
   }, []);
 
   return (
-    <main ref={backgroundref} className="relative bg-zinc-950 w-full h-[600vh] uppercase ">
-      <Headeranimation
-        className=" text-6xl md:text-6xl lg:text-[200px] text-white absolute flex items-center justify-center w-full h-[100vh] lowercase"
-        text="Surface"
-      />
+    <main ref={backgroundref} className="relative bg-zinc-950 w-full h-[600vh]  ">
+      <span className=" text-6xl md:text-6xl lg:text-[300px] text-white absolute flex flex-col items-center justify-center w-full h-[100vh] ">
+        <span className=" text-xl  text-orange-600  flex items-center justify-center w-full   ">
+          Introducing
+        </span>
+        surface
+      </span>
+
+      <div className=" text-xl     bg-white absolute bottom-0 flex items-center justify-center w-full h-[110vh]   ">
+        <SpecialTextanimation
+          text="The sound of innovation."
+          AdvancedWords={['innovation']}
+          className="w-full leading-tight  text-2xl p-[5%]"
+        />
+      </div>
 
       {/* Section of product animation and details */}
       <div className="absolute flex items-center flex-row-reverse top-[35%] left-[10%]  text-white space-x-2 md:visible lg:visible">
