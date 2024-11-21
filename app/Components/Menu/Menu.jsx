@@ -62,7 +62,7 @@ function Menu() {
   return (
     <div className="fixed z-[100] flex justify-end top-[3%] h-full w-full pointer-events-none">
       <button
-        className="absolute bg-zinc-800 text-white px-4 py-2 top-[2%] right-[2%] rounded-full flex items-end h-[40px] w-[40px] z-[100] overflow-hidden pointer-events-auto"
+        className="absolute bg-zinc-800 text-white px-4 py-2 top-[2%] right-[3%] rounded-full flex items-end h-[40px] w-[40px] z-[100] overflow-hidden pointer-events-auto"
         onClick={toggleMenu}
       >
         <div ref={ButtonRef} className="flex h-full items-center justify-center flex-col ">

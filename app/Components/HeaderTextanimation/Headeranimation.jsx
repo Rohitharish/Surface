@@ -36,7 +36,7 @@ const Headeranimation = ({ text, className }) => {
         </span>
       ))}
 
-      <span className=" bg-orange-600 letter inline-block h-[10px] w-[40px] rounded-full"></span>
+      <span className=" bg-orange-600 letter inline-block h-[5px] w-[20px]  md:h-[10px] md:w-[40px] lg:h-[10px] lg:w-[40px] rounded-full"></span>
     </div>
   );
 };

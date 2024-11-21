@@ -10,7 +10,7 @@ function SmallScreen() {
   return (
     <main className="relative bg-zinc-950  h-full uppercase px-[5%]   ">
       <Headeranimation
-        className=" text-lg   text-white  flex items-center justify-center w-full h-[50vh] lowercase"
+        className=" text-lg  text-white  flex items-center justify-center w-full h-[50vh] lowercase"
         text="Surface"
       />
 

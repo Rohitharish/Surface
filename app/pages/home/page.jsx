@@ -19,7 +19,7 @@ function Home() {
     const image2 = image2Ref.current;
 
     gsap.set(image2, { clipPath: 'inset(0 100% 0 0)' });
-    gsap.set(zoomcontainer, { width: '50%' });
+    gsap.set(zoomcontainer, { width: '80%' });
 
     gsap.to(zoomcontainer, {
       width: '98%',
@@ -52,8 +52,8 @@ function Home() {
       >
         <div className="flex items-center justify-center w-full">
           <Headeranimation
-            className="text-6xl lg:text-[200px] text-black relative w-full"
-            text="omnisonic"
+            className=" text-5xl md:text-6xl lg:text-[200px] text-black relative w-full"
+            text="Omnisonic"
           />
         </div>
         <div
@@ -62,16 +62,16 @@ function Home() {
         >
           <div className=" absolute flex h-full w-full items-start justify-start z-50 p-[4%]">
             <SpecialTextanimation
-              text="immersive, 360 - degree audio experiences."
+              text="Immersive, 360 - degree audio experiences."
               specialWords={['360', '-', 'degree']}
               className="w-full leading-tight"
             />
           </div>
-          <img src={'/b.png'} className="h-full w-screen object-cover relative" />
+          <img src={'/ominiW.png'} className="h-full w-screen object-cover relative" />
           <img
             ref={image2Ref}
             className="h-full w-screen object-cover absolute top-0 z-40"
-            src={'/a.png'}
+            src={'/ominiB.png'}
           />
         </div>
       </main>

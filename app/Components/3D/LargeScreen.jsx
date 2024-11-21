@@ -6,7 +6,6 @@ import Mainanimation from '@/app/Components/maintextanimation/Mainanimation';
 import Headeranimation from '@/app/Components/HeaderTextanimation/Headeranimation';
 import AdvancedText from '@/app/Components/ThreeTextAnimation/AdvancedText';
 
-
 function LargeScreen() {
   const backgroundref = useRef(null);
 
@@ -29,12 +28,8 @@ function LargeScreen() {
   return (
     <main ref={backgroundref} className="relative bg-zinc-950 w-full h-[600vh] uppercase ">
       <Headeranimation
-        className=" text-6xl md:text-6xl lg:text-[300px] text-white absolute flex items-center justify-center w-full h-[100vh] lowercase"
+        className=" text-6xl md:text-6xl lg:text-[200px] text-white absolute flex items-center justify-center w-full h-[100vh] lowercase"
         text="Surface"
-      />
-      <Headeranimation
-        className="text-6xl md:text-6xl lg:text-[300px] text-white absolute flex items-end justify-center w-full h-full lowercase py-[10%]"
-        text="Available"
       />
 
       {/* Section of product animation and details */}
