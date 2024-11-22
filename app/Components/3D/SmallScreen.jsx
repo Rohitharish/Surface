@@ -2,18 +2,19 @@
 import CanvasComponent from '@/app/Components/3D/Canvas';
 import gsap from 'gsap';
 import React, { useEffect, useRef, useState } from 'react';
-import Mainanimation from '@/app/Components/maintextanimation/Mainanimation';
-import Headeranimation from '@/app/Components/HeaderTextanimation/Headeranimation';
+
 import AdvancedText from '@/app/Components/ThreeTextAnimation/AdvancedText';
+import SpecialTextanimation from '../SpecialText/SpecialTextanimation';
 
 function SmallScreen() {
   return (
-    <main className="relative bg-zinc-950  h-full uppercase px-[5%]   ">
-      <Headeranimation
-        className=" text-lg  text-white  flex items-center justify-center w-full h-[50vh] lowercase"
-        text="Surface"
-      />
-
+    <main className="relative bg-zinc-950  h-full  px-[5%]   ">
+      <div className="  text-4xl text-white  flex flex-col items-center justify-center w-full h-[30vh] ">
+        <span className=" text-xs  text-orange-600  flex items-center justify-center w-full   ">
+          Introducing
+        </span>
+        surface
+      </div>
       {/* Section of product animation and details */}
       <div className=" flex h-full w-full items-center flex-col    text-white my-10 ">
         <img className=" h-full w-full object-cover rounded-lg" src="/HP1.png" alt="" />
@@ -47,11 +48,13 @@ function SmallScreen() {
           className="w-full h-full text-3xl leading-tight lowercase py-2"
         />
       </div>
-
-      <Headeranimation
-        className=" text-xl   text-white  flex items-center justify-center w-full h-[50vh] lowercase"
-        text="available"
-      />
+      <div className="flex items-center justify-center  h-[50vh] w-full">
+        <SpecialTextanimation
+          text="The sound of innovation."
+          AdvancedWords={['innovation']}
+          className=" leading-tight  text-xl  "
+        />
+      </div>
     </main>
   );
 }

@@ -28,12 +28,12 @@ function LargeScreen() {
 
   return (
     <main ref={backgroundref} className="relative bg-zinc-950 w-full h-[600vh]  ">
-      <span className=" text-6xl md:text-6xl lg:text-[300px] text-white absolute flex flex-col items-center justify-center w-full h-[100vh] ">
+      <div className=" text-6xl md:text-6xl lg:text-[300px] text-white absolute flex flex-col items-center justify-center w-full h-[100vh] ">
         <span className=" text-xl  text-orange-600  flex items-center justify-center w-full   ">
           Introducing
         </span>
         surface
-      </span>
+      </div>
 
       <div className=" text-xl     bg-white absolute bottom-0 flex items-center justify-center w-full h-[110vh]   ">
         <SpecialTextanimation
